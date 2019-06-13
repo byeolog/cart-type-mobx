@@ -1,0 +1,72 @@
+[
+  {
+    "id": "PI001",
+    "name": "Apple iPhone XS",
+    "price": 1000000
+  },
+  {
+    "id": "PI002",
+    "name": "Samsung Galaxy S10",
+    "price": 1000000
+  },
+  {
+    "id": "PI003",
+    "name": "Apple Airpod",
+    "price": 200000
+  },
+  {
+    "id": "PI004",
+    "name": "Samsung Galaxy Watch",
+    "price": 150000
+  },
+  {
+    "id": "PI005",
+    "name": "Apple iPad",
+    "price": 600000
+  },
+  {
+    "id": "PI006",
+    "name": "LG gram",
+    "price": 1200000
+  },
+  {
+    "id": "PI007",
+    "name": "LG TROMM",
+    "price": 2000000
+  },
+  {
+    "id": "PI008",
+    "name": "LG DIOS",
+    "price": 2200000
+  },
+  {
+    "id": "PI009",
+    "name": "LG Styler",
+    "price": 1200000
+  },
+  {
+    "id": "PI010",
+    "name": "Samsung TV 55inch",
+    "price": 1800000
+  },
+  {
+    "id": "PI011",
+    "name": "soju",
+    "price": 4000
+  },
+  {
+    "id": "PI012",
+    "name": "clip",
+    "price": 500
+  },
+  {
+    "id": "PI013",
+    "name": "LG WHISEN",
+    "price": 1500000
+  },
+  {
+    "id": "PI014",
+    "name": "LG PuriCare",
+    "price": 200000
+  }
+]

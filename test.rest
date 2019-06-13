@@ -1,0 +1,36 @@
+@endpoint=http://localhost:8080
+
+###
+
+GET {{endpoint}}/gun HTTP/1.1
+
+###
+
+POST {{endpoint}}/gun/3 HTTP/1.1
+content-type: application/json
+
+{
+    "id": "001",
+    "name": "이름",
+    "price": 2000
+}
+
+###
+
+POST {{endpoint}}/gun/3 HTTP/1.1
+content-type: application/json
+
+{
+    "id": "002",
+    "name": "이름2",
+    "price": 1000
+}
+
+###
+
+PUT {{endpoint}}/gun/001/10 HTTP/1.1
+content-type: application/json
+
+###
+
+DELETE {{endpoint}}/gun/001 HTTP/1.1

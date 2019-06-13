@@ -1,0 +1,17 @@
+.inputNumberInShop {
+  width: 50px !important;
+  margin-right: 10px !important;
+}
+
+.cardWrapper {
+  margin-top: 10px;
+}
+
+.cardInnerWrapper {
+  display: flex;
+}
+
+.cardInner {
+  flex: 1;
+  margin-top: 10px;
+}
