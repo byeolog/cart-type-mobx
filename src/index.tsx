@@ -6,7 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 
 import { Provider } from "mobx-react";
 import CounterStore from "./stores/CounterStore"; // 스토어 import
-import MarketStore from "./stores/MarketStore"; // 스토어 import
+import MarketStore from "./stores/MarketStoreNoApi"; // 스토어 import
 
 const counterStore = new CounterStore(); // 스토어 인스턴스 생성
 const marketStore = new MarketStore(); // 스토어 인스턴스 생성

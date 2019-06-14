@@ -20,7 +20,6 @@ export default class CartItem extends React.Component<CartItemProps> {
   name = this.props.name!;
   price = this.props.price!;
   count = this.props.count!;
-  total = this.props.total!;
   deleteCart = this.props.deleteCart!;
   putCart = this.props.putCart!;
 
@@ -49,7 +48,10 @@ export default class CartItem extends React.Component<CartItemProps> {
     if (this.props.id && this.state.quantity)
       this.putCart(this.props.id, this.state.quantity);
 
-    message.success("수량이 변경되었습니다.");
+    if (this.count !== this.state.quantity) {
+      if (this.state.quantity) this.count = this.state.quantity;
+      message.success("수량이 변경되었습니다.");
+    }
   };
 
   _renderInputNumber = () => {
@@ -86,6 +88,8 @@ export default class CartItem extends React.Component<CartItemProps> {
   };
 
   public render() {
+    const total = this.props.total!; // 여기에 있어야 observe되네?
+
     return (
       <div className="cartItem">
         <div className="name">{this.name}</div>
@@ -114,7 +118,7 @@ export default class CartItem extends React.Component<CartItemProps> {
             수량변경
           </Button> */}
         </div>
-        <div className="total">{this.total}원</div>
+        <div className="total">{total}원</div>
         <div className="return">
           <Button
             type="danger"

@@ -3,7 +3,8 @@ import React, { useEffect } from "react";
 import CartItem from "./CartItem";
 import { inject, observer } from "mobx-react";
 
-import { Divider } from "antd";
+import { Divider, Empty, Typography } from "antd";
+const { Title } = Typography;
 
 interface cartListJSON {
   cartProduct: { id: string; name: string; price: number };
@@ -39,6 +40,7 @@ const CartItemList = (props: CartItemListProps) => {
 
   return (
     <div>
+      <Divider />
       <div className="cartItem">
         <div className="name header">제품명</div>
         <div className="price header">가격</div>
@@ -48,8 +50,10 @@ const CartItemList = (props: CartItemListProps) => {
         <div className="return header" />
       </div>
       <Divider />
-      {itemList}
-      <Divider>총합</Divider>
+      {itemList.length !== 0 ? itemList : <Empty />}
+      <Divider>
+        <Title level={4}>합계</Title>
+      </Divider>
       <p>{props.total} 원</p>
     </div>
   );
